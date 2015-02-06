@@ -1065,10 +1065,10 @@ Referencia
 
 .ventas-titulo span{
 	position: absolute;
-	color: #3D6FD0;
+	color: #4AA48C;
 	right: 0;
 	font: bold 3vh 'KievitOT-Regular';
-	top: 50%;
+	top: 115%;
 	margin-top: -1.5vh;
 }
 
@@ -1109,8 +1109,8 @@ Referencia
 .fondo-blanco{
 	width: 100%;
 	height: 20%;
-	background-color: white;
-	color: #808080;
+	background-color: #A2D0C3;
+	color: white;
 	font: 3vh 'KievitOT-Regular';
 	position: relative;
 }
@@ -1683,10 +1683,15 @@ Referencia
 /* Modulo de Ventas */
 
 #s-prod{
+	/*
 	background : url('images/menus/moduloVentas/01tit-solicitud.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size:100% 100%;
+	*/
+	margin-top: 5%;
+	color:black;
+	font-size: 150%;
 }
 
 #cot-prod{
