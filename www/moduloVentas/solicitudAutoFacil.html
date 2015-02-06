@@ -1,0 +1,177 @@
+<div class="modal-body">
+        <form id="form-autofacil" role="form" method="post" action="/api/store-pdf" >
+
+          <input type="hidden" name="pdf" value="TripticoAutoFacil_Edit.pdf">
+
+          <input type="hidden" name="attributes[0]" class="input-day" value="29">
+          <input type="hidden" name="attributes[1]" class="input-month" value="7">
+          <input type="hidden" name="attributes[2]" class="input-year" value="2014">
+
+
+          <div class="form-group">
+            <label for="buc-input">No. de cliente BUC</label>
+            <input id="buc-input" class="form-control" type="text" name="attributes[3]">
+          </div>
+
+          <div class="form-group">
+            <label>Nombre</label>
+            <input class="form-control" type="text" name="attributes[4]">
+          </div>
+
+          <div class="form-group">
+            <label>Fecha de nacimiento</label>
+            <div class="row">
+              <div class="col-xs-4">
+                <input class="form-control" type="number" name="attributes[5]" placeholder="Día">
+              </div>
+
+              <div class="col-xs-4">
+                <input class="form-control" type="number" name="attributes[6]" placeholder="Mes">
+              </div>
+
+              <div class="col-xs-4">
+                <input class="form-control" type="number" name="attributes[7]" placeholder="Año">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Sexo</label>
+            <select class="form-control" name="attributes[8]">
+              <option>Masculino</option>
+              <option>Femenino</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Edad</label>
+            <input class="form-control" type="number" name="attributes[9]">
+          </div>
+
+          <div class="form-group">
+            <label>Ocupación</label>
+            <input class="form-control" type="text" name="attributes[10]">
+          </div>
+
+          <hr>
+
+          <div class="form-group">
+            <label>Número de licencia</label>
+            <input class="form-control" type="text" name="attributes[11]">
+          </div>
+
+          <div class="form-group">
+            <label>Tipo de licencia</label><br>
+            <label class="radio-inline">
+              <input type="radio" name="radio[12]" value="0"> A
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="radio[12]" value="1"> B
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="radio[12]" value="2"> C
+            </label>
+          </div>
+
+
+          <div class="form-group">
+            <label class="control-label">Plan a contratar</label><br>
+            <label class="radio-inline">
+              <input type="radio" name="radio[15]" value="0"> Auto
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="radio[15]" value="1"> Pickup
+            </label>
+          </div>
+
+          <hr>
+
+          <strong> Preferente</strong>
+
+          <div class="form-group">
+            <label>Conducto de cobro</label><br>
+            <label class="radio-inline">
+              <input type="radio" name="radio[17]" value="0"> Cuenta de cheques
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="radio[17]" value="1"> Tarjeta de crédito
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label>Número</label>
+            <input type="text" name="attributes[19]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Banco</label>
+            <input type="text" name="attributes[20]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Conducto de cobro</label><br>
+            <label class="radio-inline">
+              <input type="radio" name="radio[21]" value="0"> Cuenta de cheques
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="radio[21]" value="1"> Tarjeta de crédito
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label>Número</label>
+            <input type="text" name="attributes[23]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Banco</label>
+            <input type="text" name="attributes[24]" class="form-control">
+          </div>
+
+          <hr>
+
+          <p class="help-text">
+          Para uso interno en la sucursal
+          </p>
+
+          <div class="form-group">
+            <label>Número de empleado</label>
+            <input type="text" name="attributes[25]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Número de sucursal</label>
+            <input type="text" name="attributes[26]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Nombre de la sucursal</label>
+            <input type="text" name="attributes[27]" class="form-control">
+          </div>
+		  
+		  <hr>
+		  
+		  <div class="form-group">
+            <label>Correo Electrónico</label>
+            <input type="text" name="email" class="form-control">
+          </div>
+
+          <hr>
+
+          <div class="form-group">
+            <label>¿Autorizó?</label><br>
+            <label class="radio-inline">
+              <input type="radio" name="radio[28]" value="0"> Sí
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="radio[28]" value="1"> No
+            </label>
+          </div>
+
+
+        </form>
+</div>
+<div class="modal-footer">
+        <button id="cancelar" type="button" class="btn btn-default cancel-captation-form" data-dismiss="modal">Cancelar</button>
+        <button id="autofacil" type="button" class="btn btn-primary save-captation-form">Guardar PDF</button>
+</div>

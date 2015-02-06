@@ -1,0 +1,240 @@
+<div class="modal-body">
+        <form id="form-blindaje" role="form" method="post" action="/api/store-pdf" target="_blank">
+
+          <input type="hidden" name="pdf" value="TripticoSBS_Edit.pdf">
+          <input type="hidden" name="attributes[1]" class="input-day" value="29">
+          <input type="hidden" name="attributes[2]" class="input-month" value="7">
+          <input type="hidden" name="attributes[3]" class="input-year" value="2014">
+
+          <div class="form-group">
+            <label for="buc-input">No. de cliente BUC</label>
+            <input id="buc-input" class="form-control" type="text" name="attributes[4]">
+          </div>
+
+          <div class="form-group">
+            <label>Nombre</label>
+            <input class="form-control" type="text" name="attributes[5]">
+          </div>
+
+          <div class="form-group">
+            <label>Fecha de nacimiento</label>
+            <div class="row">
+              <div class="col-xs-4">
+                <input class="form-control" type="number" name="attributes[7]" placeholder="Día">
+              </div>
+
+              <div class="col-xs-4">
+                <input class="form-control" type="number" name="attributes[8]" placeholder="Mes">
+              </div>
+
+              <div class="col-xs-4">
+                <input class="form-control" type="number" name="attributes[9]" placeholder="Año">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Sexo</label>
+            <select class="form-control" name="attributes[6]">
+              <option>Masculino</option>
+              <option>Femenino</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Teléfono</label>
+            <input class="form-control" type="text" name="attributes[10]">
+          </div>
+
+          
+          <hr>
+
+          <strong> Suma asegurada/Forma de pago a contratar </strong>
+
+          
+          <table class="table table-bordered table-striped">
+
+            <thead>
+              <tr>
+                <th> Planes </th>
+                <th> Pago mensual</th>
+                <th> Prima anual</th> 
+              </tr>
+              
+            </thead>
+
+            <tbody>
+              <tr>
+                <th>$60,000</th>
+                <td>
+                  <label class="radio-inline">
+                    <input type="radio" name="radio[11]" value="0"> $112.44
+                  </label>
+                </td>
+                <td>
+                  <label class="radio-inline">
+                    <input type="radio" name="radio[11]" value="1"> $1,268.60
+                  </label>
+                </td>
+              </tr>
+
+              <tr>
+                <th>$100,000</th>
+                <td>
+                  <label class="radio-inline">
+                    <input type="radio" name="radio[11]" value="2"> $179.04
+                  </label>
+                </td>
+                <td>
+                  <label class="radio-inline">
+                    <input type="radio" name="radio[11]" value="3"> $2,020.01
+                  </label>
+                </td>
+              </tr>
+
+              <tr>
+                <th>$150,000</th>
+                <td>
+                  <label class="radio-inline">
+                    <input type="radio" name="radio[11]" value="4"> $262.29
+                  </label>
+                </td>
+                <td>
+                  <label class="radio-inline">
+                    <input type="radio" name="radio[11]" value="5"> $2,952.27
+                  </label>
+                </td>
+              </tr>
+
+              <tr>
+                <th>$200,000</th>
+                <td>
+                  <label class="radio-inline">
+                    <input type="radio" name="radio[11]" value="6"> $345.54
+                  </label>
+                </td>
+                <td>
+                  <label class="radio-inline">
+                    <input type="radio" name="radio[11]" value="7"> $3,898.53
+                  </label>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          
+          <hr>
+
+          <strong>Autorización de cargo</strong>
+
+          <div class="form-group">
+            <label>Conducto de cobro <strong> Preferente</strong></label><br>
+            <label class="radio-inline">
+              <input type="radio" name="radio[19]" value="0"> Cuenta de cheques
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="radio[19]" value="1"> Tarjeta de crédito
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label>Número</label>
+            <input type="text" name="attributes[21]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Banco</label>
+            <input type="text" name="attributes[22]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Conducto de cobro <strong>Auxiliar</strong></label><br>
+            <label class="radio-inline">
+              <input type="radio" name="radio[23]" value="0"> Cuenta de cheques
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="radio[23]" value="1"> Tarjeta de crédito
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label>Número</label>
+            <input type="text" name="attributes[25]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Banco</label>
+            <input type="text" name="attributes[26]" class="form-control">
+          </div>
+
+          <hr>
+
+          <p class="help-text">
+          Para uso interno en la sucursal
+          </p>
+
+          <div class="form-group">
+            <label>FOLIO BUC</label>
+            <input type="text" name="attributes[34]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Sucursal</label>
+            <input type="text" name="attributes[27]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Número de identificación</label>
+            <input type="text" name="attributes[28]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Tipo de identificación</label>
+            <input type="text" name="attributes[29]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Número de empleado</label>
+            <input type="text" name="attributes[30]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Número de sucursal</label>
+            <input type="text" name="attributes[31]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Nombre de la sucursal</label>
+            <input type="text" name="attributes[32]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Nombre del funcionario</label>
+            <input type="text" name="attributes[33]" class="form-control">
+          </div>
+		  
+		  <hr>
+		  
+		  <div class="form-group">
+            <label>Correo Electrónico</label>
+            <input type="text" name="email" class="form-control">
+          </div>
+
+          <hr>
+
+          <div class="form-group">
+            <label>¿Autorizó?</label><br>
+            <label class="radio-inline">
+              <input type="radio" name="radio[35]" value="0"> Sí
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="radio[35]" value="1"> No
+            </label>
+          </div>
+
+        </form>
+</div>
+<div class="modal-footer">
+        <button id="cancelar" type="button" class="btn btn-default cancel-captation-form" data-dismiss="modal">Cancelar</button>
+        <button id="superblindaje" type="button" class="btn btn-primary save-captation-form">Guardar PDF</button>
+</div>

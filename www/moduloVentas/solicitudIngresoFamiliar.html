@@ -1,0 +1,210 @@
+<div class="modal-body">
+        <form id="form-familiar" role="form" method="post" action="/api/store-pdf" >
+
+          <input type="hidden" name="pdf" value="TripticoIFS_Edit.pdf">
+          <input type="hidden" name="attributes[1]" class="input-day" value="29">
+          <input type="hidden" name="attributes[2]" class="input-month" value="7">
+          <input type="hidden" name="attributes[3]" class="input-year" value="2014">
+
+          <div class="form-group">
+            <label for="buc-input">No. de cliente BUC</label>
+            <input id="buc-input" class="form-control" type="text" name="attributes[4]">
+          </div>
+
+          <div class="form-group">
+            <label>Nombre</label>
+            <input class="form-control" type="text" name="attributes[5]">
+          </div>
+
+          <div class="form-group">
+            <label>Fecha de nacimiento</label>
+            <div class="row">
+              <div class="col-xs-4">
+                <input class="form-control" type="number" name="attributes[7]" placeholder="Día">
+              </div>
+
+              <div class="col-xs-4">
+                <input class="form-control" type="number" name="attributes[8]" placeholder="Mes">
+              </div>
+
+              <div class="col-xs-4">
+                <input class="form-control" type="number" name="attributes[9]" placeholder="Año">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Sexo</label>
+            <select class="form-control" name="attributes[6]">
+              <option>Masculino</option>
+              <option>Femenino</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Edad</label>
+            <input class="form-control" type="number" name="attributes[10]">
+          </div>
+
+          <div class="form-group">
+            <label>Ocupación</label>
+            <input class="form-control" type="text" name="attributes[11]">
+          </div>
+
+          <div class="form-group">
+            <label>Estatura</label>
+            <input class="form-control" type="text" name="attributes[12]">
+          </div>
+          
+          <div class="form-group">
+            <label>Peso</label>
+            <input class="form-control" type="text" name="attributes[13]">
+          </div>
+
+          <div class="form-group">
+            <label>Fuma</label><br>
+            <label class="radio-inline">
+              <input type="radio" name="radio[14]" value="0"> Sí
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="radio[14]" value="1"> No
+            </label>
+          </div>
+
+
+          <hr>
+
+          <strong> Plan a contratar </strong>
+
+          <div class="form-group">
+            <label>Edad</label>
+            <input class="form-control" type="number" name="attributes[16]">
+          </div>
+
+          <div class="form-group">
+            <label>Suma asegurada</label>
+            <input class="form-control" type="text" name="attributes[17]">
+          </div>
+
+          <div class="form-group">
+            <label>Costo mensual</label>
+            <input class="form-control" type="text" name="attributes[18]">
+          </div>
+
+          
+          <hr>
+
+          
+          <div class="form-group">
+            <label>Conducto de cobro <strong> Preferente</strong></label><br>
+            <label class="radio-inline">
+              <input type="radio" name="radio[19]" value="0"> Cuenta de cheques
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="radio[19]" value="1"> Tarjeta de crédito
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label>Número</label>
+            <input type="text" name="attributes[21]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Banco</label>
+            <input type="text" name="attributes[22]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Conducto de cobro <strong>Auxiliar</strong></label><br>
+            <label class="radio-inline">
+              <input type="radio" name="radio[23]" value="0"> Cuenta de cheques
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="radio[23]" value="1"> Tarjeta de crédito
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label>Número</label>
+            <input type="text" name="attributes[25]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Banco</label>
+            <input type="text" name="attributes[26]" class="form-control">
+          </div>
+
+          <hr>
+
+          <strong>Beneficiario</strong>
+
+          <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" name="attributes[27]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Parentesco</label>
+            <input type="text" name="attributes[28]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Porcentaje</label>
+            <input type="text" name="attributes[29]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" name="attributes[30]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Parentesco</label>
+            <input type="text" name="attributes[31]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Porcentaje</label>
+            <input type="text" name="attributes[32]" class="form-control">
+          </div>
+
+
+          <hr>
+
+          <p class="help-text">
+          Para uso interno en la sucursal
+          </p>
+
+          <div class="form-group">
+            <label>FOLIO BUC</label>
+            <input type="text" name="attributes[33]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Número de empleado</label>
+            <input type="text" name="attributes[34]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Número de sucursal</label>
+            <input type="text" name="attributes[35]" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Nombre de la sucursal</label>
+            <input type="text" name="attributes[36]" class="form-control">
+          </div>
+
+		  <hr>
+		<div class="form-group">
+            <label>Correo Electrónico</label>
+            <input type="text" name="email" class="form-control">
+          </div>
+			<hr>
+        </form>
+</div>
+<div class="modal-footer">
+        <button id="cancelar" type="button" class="btn btn-default cancel-captation-form" data-dismiss="modal">Cancelar</button>
+        <button id="ingresofamiliar" type="button" class="btn btn-primary save-captation-form">Guardar PDF</button>
+</div>

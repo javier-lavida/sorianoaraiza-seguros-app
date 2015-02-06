@@ -1,0 +1,1848 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+@font-face{
+font-family:'KievitOT-Regular';
+src: url('KievitOT-Regular.otf')   format('opentype');
+}
+
+.titulo-menu{
+	color: gray;
+	font-size: 3vw;
+	font-family: 'KievitOT-Regular';
+	font-style: normal;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	margin-top: -8px;
+}
+
+.cuerpo{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.header{
+	top: 1%;
+	height: 14%;
+	width: 96%;
+	left: 2%;
+	background-color: #FE0000;
+	position: absolute;
+	border: 0px solid;
+	border-radius: 9px;
+}
+
+.header-gray{
+	top: 1%;
+	height: 14%;
+	width: 96%;
+	left: 2%;
+	background-color: #FE0000;
+	position: absolute;
+	background-position: center center;
+	background: radial-gradient(circle, #FFFFFF, #B5B5B5);
+	border: 0px solid;
+	border-radius: 9px;
+}
+
+.back{
+	left: 0;
+	top: 0;
+	width: 25%;
+	position: relative;
+	height: 100%;
+	z-index: 2;
+	padding-left: 8px;
+}
+
+.back-button{
+	top: 50%;
+	margin-top: -18px;
+	position: absolute;
+}
+
+.back-letters{
+	color: gray;
+	font-size: 12px;
+	font-family: 'KievitOT-Regular';font-style: normal;
+	position: absolute;
+	top: 50%;
+	margin-top:-8px;
+	text-align: center;
+	left: 42%;
+}
+/* Editar este boton */
+
+.complete-body{
+	height: 75%;
+	top:15%;
+	left: 2%;
+	width: 96%;
+	position: absolute;
+	min-width: 183px;
+	overflow:hidden;
+}
+
+.footer{
+	width: 96%;
+	left: 2%;
+	height: 10%;
+	position: absolute;
+	bottom:0;
+}
+
+.footer-image{
+	width: 96%;
+	left: 2%;
+	height: 10%;
+	position: absolute;
+	bottom:0;
+	text-align: center;
+}
+
+.text-footer{
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	font: bold 2vh 'KievitOT-Regular';
+	color: #8C9192;
+	top: 50%;
+	margin-top: -1vh;
+}
+
+.bolitas{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#bolita1{
+	left:50%;
+	background:url('images/bolita1.jpg');
+	background-repeat:no-repeat;
+	background-size: 5vw 5vw;
+	width:5vw;
+	height:5vh;
+	position:absolute;
+	
+}
+
+#bolita2{
+	left:50%;
+	top:45%;
+	background:url('images/bolita2.jpg');
+	background-repeat:no-repeat;
+	background-size: 5vw 5vw;
+	width: 5vw;
+	height: 5vh;
+	position:absolute;
+}
+
+.logo{
+	height: 60%;
+    left: 4%;
+    position: absolute;
+    top: 16%;
+    width: 20%;
+}
+
+.imagenes-header{
+	width: 40%;
+	height: 40%;
+	top: 30%;
+	left: 25%;
+	position: absolute;
+}
+
+.informacion-login{
+	width: 17%;
+	height: 80%;
+	top: 10%;
+	left: 68%;
+	position: absolute;
+	text-align: center;
+}
+
+.imagen-login{
+	width: 15%;
+	height: 80%;
+	top: 10%;
+	left: 84%;
+	position: absolute;
+}
+
+#bienvenido-login{
+	color: #FFFFFF;
+	width: 100%;
+	height: 33%;
+	font: bold 1.6vh 'KievitOT-Regular';
+	top: 50%;
+}
+
+#nombre-login{
+	color: #FFFFFF;
+	width: 100%;
+	font: bold 1.6vh 'KievitOT-Regular';
+	height: 70%;
+	margin-top: 10%;
+	margin-left: -10%;
+}
+
+#cerrar-session{
+	bottom: 0;
+    color: #ffffff;
+    font: bold 1.6vh 'KievitOT-Regular';
+    margin-left: -25%;
+    text-align: center;
+    width: 115%;
+}
+
+#cerrar-session span{
+	border-bottom: 1px solid #FFFFFF;
+}
+
+
+#hora-login{
+	color: #FFFFFF;
+	width: 100%;
+	height: 33%;
+	font: bold 1.6vh 'KievitOT-Regular';
+}
+
+.zurich-header{
+	height: 100%;
+	width: 50%;
+	position: absolute;
+	
+}
+
+.santander-header{
+	height: 100%;
+	width: 50%;
+	left: 50%;
+	position: absolute;
+}
+
+.logo-left{
+	width: 20%;
+	height: 20%;
+	left: 0;
+	top: 0;
+	border-top: 3px solid #FFFFFF;
+	border-left: 3px solid #FFFFFF;
+	position: absolute;
+}
+
+.logo-right{
+	width: 20%;
+	height: 20%;
+	right: 0;
+	top:0;
+	border-top: 3px solid #FFFFFF;
+	border-right: 3px solid #FFFFFF;
+	position: absolute;
+}
+
+.logo-center{
+	width: 100%;
+	height: 60%;
+	left:0;
+	top: 20%;
+	position: absolute;
+	text-align: center;
+	color: #FFFFFF;
+	font: bold 1.8vh 'KievitOT-Regular'; 
+}
+
+.logo-bottom-left{
+	width: 20%;
+	height: 20%;
+	left: 0;
+	bottom:0;
+	border-bottom: 3px solid #FFFFFF;
+	border-left: 3px solid #FFFFFF;
+	position: absolute;
+}
+
+.logo-bottom-right{
+	width: 20%;
+	height: 20%;
+	right: 0;
+	bottom:0;
+	border-bottom: 3px solid #FFFFFF;
+	border-right: 3px solid #FFFFFF;
+	position: absolute;
+}
+
+#zurich-movil{
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-62px;
+	margin-top:-24px;
+}
+
+.logo-app{
+	width: 100%;
+	position: relative;
+	height: 19%;
+    text-align: center;
+}
+
+.one-element{
+	width:100%;
+	height:1%;
+	position: relative;
+}
+
+#portal-movil{
+	left: 50%;
+	top: 50%;
+	position:absolute;
+	margin-left: -82px;
+	margin-top: -33px;
+}
+
+.area-gris{
+	width: 100%;
+	background-position: center center;
+	background: radial-gradient(circle, #FFFFFF, #B5B5B5);
+	position:relative;
+	height: 19%;
+	border: 0px solid;
+	border-radius: 9px;
+}
+
+#principal-body-part-1{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+#principal-body-part-2{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: none;
+	z-index: 4;
+}
+
+.principal-body-element-1{
+	width:100%;
+	height:31%;
+	position:relative;
+	overflow: hidden;
+}
+
+#carrusel-principal-1{
+	width:100%;
+	position:absolute;
+	z-index:3;
+	text-align:center;
+	height:85%;
+}
+
+#carrusel-principal-2{
+	width:100%;
+	position:absolute;
+	z-index:2;
+	text-align:center;
+	display: none;
+	height:85%;
+}
+
+#carrusel-principal-3{
+	width:100%;
+	position:absolute;
+	z-index:2;
+	text-align:center;
+	display: none;
+	height:85%;
+}
+
+.info-productos{
+	color: gray;
+	font-size: 12px;
+	font-family: 'KievitOT-Regular';font-style: normal;
+	width:100%;
+	border-bottom: 1px solid #B5B5B5;
+	padding-bottom:2px;
+	left:0;
+	top:0;
+}
+
+.detalle-productos{
+	color: gray;
+	font-size: 12px;
+	font-family: 'KievitOT-Regular';font-style: normal;
+	position:absolute;
+	top:0;
+	right:18px;
+}
+
+.flecha-detalle{
+	background-image: url('images/icons/backButtonPo.png');
+	background-position: 0 -20px;
+   	background-repeat: no-repeat;
+	height: 12px;
+	width: 16px;
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+.abrir-flecha-detalle{
+	background-image: url('images/icons/backButtonPo.png');
+	background-position: 0 -20px;
+   	background-repeat: no-repeat;
+	height: 12px;
+	width: 16px;
+	position:absolute;
+	top:0;
+	left: 42%;
+}
+
+.banner-principal{
+	position: relative;
+}
+
+.principal-body-element-2{
+	width:100%;
+	height:31%;
+	position:relative;
+}
+
+.principal-body-element-3{
+	width:100%;
+	height:31%;
+	position:relative;
+}
+
+.principal-body-element-4{
+	width:100%;
+	height:31%;
+	position:relative;
+}
+
+.principal-body-element-5{
+	width:100%;
+	height:31%;
+	position:relative;
+}
+
+.principal-body-element-6{
+	width:100%;
+	height:31%;
+	position:relative;
+}
+
+.one-element-principal{
+	width:100%;
+	height:2%;
+}
+
+.agenda-contenido{
+	height: 92%;
+	width: 100%;
+	position: relative;
+}
+
+.calendar{
+	left:0;
+	top: 15%;
+	height: 80%;
+	width: 20%;
+	position: absolute;
+}
+
+.calendar .mes{
+	color: gray;
+	font-size: 3vw;
+	font-family: 'KievitOT-Regular';font-style: normal;
+	width: 100%;
+	height: 30%;
+	text-align: center;
+}
+
+.calendar .ano{
+	color: gray;
+	font-size: 6vw;
+	font-family: 'KievitOT-Regular';font-style: normal;
+	width: 100%;
+	text-align: center;
+	height: 50%;
+}
+
+.calendar .dia{
+	color: gray;
+	font-size: 2.3vw;
+	font-family: 'KievitOT-Regular';font-style: normal;
+	width: 100%;
+	text-align: center;
+	height: 20%;
+}
+
+.gris-blanco{
+	height: 80%;
+	width: 60%;
+	top: 15%;
+	left: 20%;
+	position: absolute;
+}
+
+.generic-gris-blanco{
+	height: 80%;
+	left: 2%;
+	position: absolute;
+	top: 20%;
+	width: 96%;
+}
+
+.generic-griss{
+	width: 100%;
+	height: 25%;
+	background-color: #E7E7E7;
+}
+
+.generic-blancoo{
+	width: 100%;
+	height: 25%;
+}
+
+.generic-griss p{
+	color: gray;
+	font-size: 2vw;
+	font-family: 'KievitOT-Regular';font-style: normal;
+	width: 85%;
+	left: 3%;
+	margin-top: 6px;
+    position: absolute;
+}
+
+.generic-blancoo p{
+	color: gray;
+	font-size: 2vw;
+	font-family: 'KievitOT-Regular';font-style: normal;
+	width: 85%;
+	left: 3%;
+	margin-top: 6px;
+    position: absolute;
+}
+
+.generic-blancoo-cap{
+	width: 100%;
+	height: 16%;
+}
+
+.generic-griss-cap{
+	width: 100%;
+	height: 16%;
+	background-color: #E7E7E7;
+}
+
+.generic-griss-cap p{
+	color: gray;
+	font-size: 2vw;
+	font-family: 'KievitOT-Regular';font-style: normal;
+	width: 85%;
+	left: 3%;
+	margin-top: 3px;
+    position: absolute;
+}
+
+.generic-blancoo-cap p{
+	color: gray;
+	font-size: 2vw;
+	font-family: 'KievitOT-Regular';font-style: normal;
+	width: 85%;
+	left: 3%;
+	margin-top: 3px;
+    position: absolute;
+}
+
+.open-element{
+	width:12%;
+	left:88%;
+	margin-top: 6px;
+	position:absolute;
+}
+
+
+.open-element-cap{
+	width:12%;
+	left:88%;
+	margin-top: 3px;
+	position:absolute;
+}
+
+.open-element-cap span{
+	color: #FE0000;
+	font-size: 12px;
+	font-family: 'KievitOT-Regular';font-style: normal;
+}
+
+.open-element span{
+	color: #FE0000;
+	font-size: 12px;
+	font-family: 'KievitOT-Regular';font-style: normal;
+}
+
+.griss{
+	width: 100%;
+	height: 33%;
+	background-color: #E7E7E7;
+}
+
+.griss p{
+	color: gray;
+	font-size: 3vw;
+	font-family: 'KievitOT-Regular';font-style: normal;
+	width: 67%;
+	left: 3%;
+	margin-top: 6px;
+    position: absolute;
+}
+
+.griss span{
+	color: gray;
+	font-size: 3vw;
+	font-family: 'KievitOT-Regular';font-style: normal;
+	width: 27%;
+	right: 3%;
+	margin-top: 6px;
+    position: absolute;
+}
+
+.blancoo{
+	width: 100%;
+	height: 33%;
+}
+
+.blancoo p{
+	color: gray;
+	font-size: 3vw;
+	font-family: 'KievitOT-Regular';font-style: normal;
+	width: 67%;
+	left: 3%;
+	margin-top: 6px;
+    position: absolute;
+}
+
+.blancoo span{
+	color: gray;
+	font-size: 3vw;
+	font-family: 'KievitOT-Regular';font-style: normal;
+	width: 27%;
+	right: 3%;
+	margin-top: 6px;
+    position: absolute;
+}
+
+.llamadas-visitas{
+	height: 100%;
+	width: 18%;
+	top: 0;
+	right: 0;
+	position: absolute;
+}
+
+.label-llamadas-visitas{
+	width: 100%;
+	position: absolute;
+	height: 10%;
+}
+
+.label-llamadas{
+	color: gray;
+	font-size: 1.8vw;
+	font-family: 'KievitOT-Regular';font-style: normal;
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.label-visitas{
+	color: gray;
+	font-size: 1.8vw;
+	font-family: 'KievitOT-Regular';font-style: normal;
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.check-left-1{
+	width: 3vw;
+	height: 3vw;
+	position: absolute;
+	left: 3%;
+	top: 14%;
+}
+
+.check-right-1{
+	width: 4vw;
+	height: 4vw;
+	position: absolute;
+	right: 26%;
+	top: 14%;
+}
+
+.check-left-2{
+	width: 3vw;
+	height: 3vw;
+	position: absolute;
+	left: 3%;
+	top: 42%;
+}
+
+.check-right-2{
+	width: 4vw;
+	height: 4vw;
+	position: absolute;
+	right: 26%;
+	top: 42%;
+}
+
+.check-left-3{
+	width: 3vw;
+	height: 3vw;
+	position: absolute;
+	left: 3%;
+	top: 70%;
+}
+
+.check-right-3{
+	width: 4vw;
+	height: 4vw;
+	position: absolute;
+	right: 26%;
+	top: 70%;
+}
+
+.supercheck{
+	width: 4vw;
+ 	height: 4vw;
+}
+
+.diag-val{
+	width:96%;
+	height:85%;
+	top: 15%;
+	position:absolute;
+	left: 2%;
+}
+
+.diag-val span{
+	color: gray;
+	font-size: 2vw;
+	font-family: 'KievitOT-Regular';font-style: normal;
+}
+
+.form-control{
+	display: block;
+	width: 100%;
+	height: 30%;
+	padding: 6px 12px;
+	font-size: 2vw;
+	line-height: 1.42857143;
+	color: gray;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+#video-element{
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+ 	position: fixed;
+	top:0;
+	left:0;
+	background:rgba(128,128,128,0.6);
+	/*
+	z-index: 5;
+	width: 100%;
+	z-index: 5;
+
+	*/
+}
+
+#video-element-back{
+	height: 86%;
+	left: 7%;
+	position: absolute;
+	top: 7%;
+	width: 86%;
+	z-index: 6;
+	
+	/* Back ground ios*/
+		
+}
+
+#cerrar-video{
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	right: 0;
+	top: -31px; 
+	background: url('images/icons/delete1.png');
+ 	background-repeat: no-repeat;
+	background-size: 30px;
+}
+
+/*
+Referencia 
+
+.complete-body{
+	height: 70%;
+	top:15%;
+	left: 2%;
+	width: 96%;
+	position: absolute;
+	min-width: 183px;
+	overflow:hidden;
+}
+*/
+
+
+.text-modulo-principal{
+	width: 80%;
+	left: 10%;
+	height: 10%;
+	top: 3%;
+	position: relative;
+	font:bold 4vh 'KievitOT-Regular'; 
+	text-align: center;
+}
+
+.imagenes-modulo-principal{
+	height: 80%;
+	width: 100%;
+	top: 20%;
+	position: absolute;
+}
+
+#como-voy-principal{
+	width: 50%;
+	height: 33%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	text-align: center;
+}
+
+#citas-principal{
+	width: 50%;
+	height: 33%;
+	right: 0;
+	top: 0;
+	position: absolute;
+	text-align: center;
+}
+
+#perfilar-principal{
+	width: 50%;
+	height: 33%;
+	left: 0;
+	top: 33%;
+	position: absolute;
+	text-align: center;
+}
+
+#oferta-principal{
+	width: 50%;
+	height: 33%;
+	right: 0;
+	top: 33%;
+	position: absolute;
+	text-align: center;
+}
+
+#filtrado-principal{
+	width: 50%;
+	height: 33%;
+	left: 0;
+	top: 66%;
+	position: absolute;
+	text-align: center;
+}
+
+#capacitacion-principal{
+	width: 50%;
+	height: 33%;
+	right: 0;
+	top: 66%;
+	position: absolute;
+	text-align: center;
+}
+
+.navegador-azul{
+	position: relative;
+	left: 0;
+	top: 0;
+	height: 7%;
+	width: 100%;
+	background-color: #3D6FD0;
+	background-position: center center;
+	text-align: left;
+	border: 0 solid;
+	border-radius: 9px;
+}
+
+.texto-azul-1{
+	position: absolute;
+	font: bold 2vh 'KievitOT-Regular';
+	color: #FFFFFF;
+	top: 50%;
+	margin-top: -1.2vh;
+	left: 3%;
+}
+
+.texto-azul-2,.texto-azul-ventas,.texto-azul-usuario{
+	position: absolute;
+	font: bold 2vh 'KievitOT-Regular';
+	color: #FFFFFF;
+	top: 50%;
+	margin-top: -1.2vh;
+	left: 37%;
+}
+
+.texto-azul-3{
+	position: absolute;
+	font: bold 2vh 'KievitOT-Regular';
+	color: #FFFFFF;
+	top: 50%;
+	margin-top: -1.2vh;
+	left: 68%;
+}
+
+.flecha-azul-1{
+	position: absolute;
+	left: 32%;
+	top: 50%;
+	margin-top: -1vh;
+	background: url('images/flechaAzul.jpg');
+	background-repeat: no-repeat;
+	background-size: 2vh 2vh;
+	width: 2vh;
+	height: 2vh;
+}
+
+.flecha-azul-2{
+	position: absolute;
+	left: 63%;
+	top: 50%;
+	margin-top: -1vh;
+	background: url('images/flechaAzul.jpg');
+	background-repeat: no-repeat;
+	background-size: 2vh 2vh;
+	width: 2vh;
+	height: 2vh;
+}
+
+.general-body{
+	position: absolute;
+	height: 93%;
+	width: 100%;
+}
+
+.general-body-capacitacion{
+	position: absolute;
+	height: 93%;
+	width: 100%;
+	overflow-y: auto;
+}
+
+.cv-espacio{
+	position: relative;
+	width: 100%;
+	height: 5%;
+}
+
+.cv-titulo,.ventas-titulo{
+	position: relative;
+	width: 100%;
+	height: 10%;
+}
+
+#cv{
+	background : url('images/menus/titulos/01tit_comovoy.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:100% 100%;
+}
+
+#perfff{
+	background : url('images/menus/titulos/03tit_perfilar.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:100% 100%;
+}
+
+#i-prod{
+	background : url('images/menus/titulos/04tit_oferta.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:100% 100%;
+}
+
+#f-prod{
+	background : url('images/menus/titulos/05tit_filtrado.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:100% 100%;
+}
+
+.cv-titulo span{
+	position: absolute;
+	color: #3D6FD0;
+	right: 0;
+	font: bold 3vh 'KievitOT-Regular';
+	top: 50%;
+	margin-top: -1.5vh;
+}
+
+.ventas-titulo span{
+	position: absolute;
+	color: #3D6FD0;
+	right: 0;
+	font: bold 3vh 'KievitOT-Regular';
+	top: 50%;
+	margin-top: -1.5vh;
+}
+
+.cv-gris{
+	position: relative;
+	width: 100%;
+	height: 40%;
+}
+
+.cv-grafica{
+	position: relative;
+	width: 100%;
+	height: 45%;
+}
+
+.cv-espacio-fondos{
+	width: 100%;
+	height: 20%;
+}
+
+.fondo-gris{
+	width: 100%;
+	height: 20%;
+	background-color: #E6E6E6;
+	color: #808080;
+	font: 3vh 'KievitOT-Regular';
+	position: relative;
+}
+
+.fondo-gris span{
+	top: 50%;
+	margin-top: -1.6vh;
+	left: 5px;
+	position: absolute;
+}
+
+.fondo-blanco{
+	width: 100%;
+	height: 20%;
+	background-color: white;
+	color: #808080;
+	font: 3vh 'KievitOT-Regular';
+	position: relative;
+}
+
+.fondo-blanco span{
+	top: 50%;
+	margin-top: -1.6vh;
+	left: 5px;
+	position: absolute;
+}
+
+#fp-body{
+	position: relative;
+	height: 85%;
+	width: 100%;
+	background-color:  #F5F5F5;
+	border: 0 solid;
+    border-radius: 9px;
+}
+
+.fp-espacio{
+	width: 100%;
+	height: 2%;
+}
+
+#fp-fraude{
+	width: 96%;
+	left: 2%;
+	height: 10%;
+	font: 4vh 'KievitOT-Regular';
+	border: 1px solid;
+	border-color: #DDDDDD;
+	border-radius: 5px;
+	color: black;
+	position: relative;
+	background-color:  white;
+}
+
+#fp-fraude  span{
+	top: 50%;
+	left: 15px;
+	margin-top: -2.3vh;
+	position: absolute;
+}
+
+#fp-hogar{
+	width: 96%;
+	left: 2%;
+	height: 10%;
+	font: 4vh 'KievitOT-Regular';
+	border: 1px solid;
+	border-color: #DDDDDD;
+	border-radius: 5px;
+	color: black;
+	position: relative;
+	background-color:  white;
+}
+
+#fp-hogar span{
+	top: 50%;
+	left: 15px;
+	margin-top: -2.3vh;
+	position: absolute;
+}
+
+#fp-pyme{
+	width: 96%;
+	left: 2%;
+	height: 10%;
+	font: 4vh 'KievitOT-Regular';
+	border: 1px solid;
+	border-color: #DDDDDD;
+	border-radius: 5px;
+	color: black;
+	position: relative;
+	background-color:  white;
+}
+
+#fp-pyme span{
+	top: 50%;
+	left: 15px;
+	margin-top: -2.3vh;
+	position: absolute;
+}
+
+#fp-vida{
+	width: 96%;
+	left: 2%;
+	height: 10%;
+	font: 4vh 'KievitOT-Regular';
+	border: 1px solid;
+	border-color: #DDDDDD;
+	border-radius: 5px;
+	color: black;
+	position: relative;
+	background-color:  white;
+}
+
+#fp-vida span{
+	top: 50%;
+	left: 15px;
+	margin-top: -2.3vh;
+	position: absolute;
+}
+
+#ul-fraude{
+	width: 94%;
+	height: 51.5%;
+	left: 3%;
+	position: relative;
+	font: 4vh 'KievitOT-Regular';
+	color: #808080;
+	overflow-y: auto;
+	overflow-x: none;
+	display: none;
+}
+
+#ul-fraude div{
+	width: 96%;
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	position: relative;
+	padding-left: 2%;
+}
+
+#ul-hogar{
+	width: 94%;
+	height: 34.5%;
+	left: 3%;
+	position: relative;
+	font: 4vh 'KievitOT-Regular';
+	color: #808080;
+	overflow: hidden;
+	display: none;
+}
+
+#ul-hogar div{
+	width: 96%;
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	position: relative;
+	padding-left: 2%;
+}
+
+#ul-pyme{
+	width: 94%;
+	height: 17.3%;
+	left: 3%;
+	position: relative;
+	font: 4vh 'KievitOT-Regular';
+	color: #808080;
+	overflow: hidden;
+	display: none;
+}
+
+#ul-pyme div{
+	width: 96%;
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	position: relative;
+	padding-left: 2%;
+}
+
+#ul-vida{
+	width: 94%;
+	height: 58%;
+	left: 3%;
+	position: relative;
+	font: 4vh 'KievitOT-Regular';
+	color: #808080;
+	overflow: hidden;
+	display: none;
+}
+
+#ul-vida div{
+	width: 96%;
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	position: relative;
+	padding-left: 2%;
+}
+
+#shadow-background,#shadow-background-custom{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	background: url('images/overlay.png');
+	background-repeat: repeat;
+}
+
+#shadow-content,#shadow-content-custom{
+	position: absolute;
+	z-index: 6;
+	background-color: #F5F5F5;
+	border: 0px solid;
+	border-radius: 9px;
+	position: relative;
+	text-align: center;
+}
+
+.asistencia-sbs{
+	position: absolute;
+	top: 30px;
+	left: 2%;
+	width: 96%;
+	height: 20%;
+}
+
+.asistencia-sbs-pyme{
+	position: absolute;
+	top: 30px;
+	left: 2%;
+	width: 96%;
+	height: 20%;
+}
+
+.pdf{
+	position: absolute;
+	top: 7%;
+	left: 2%;
+	width: 96%;
+	height: 90%;
+	overflow: auto; 
+	-webkit-overflow-scrolling: touch;
+}
+
+#pdf-content{
+	width: 100%;
+	height: 100%;
+}
+
+.casa-segura{
+	position: absolute;
+	top: 30px;
+	left: 2%;
+	width: 96%;
+	height: 20%;
+}
+
+.empresa-protegida{
+	position: absolute;
+	top: 30px;
+	left: 2%;
+	width: 96%;
+	height: 20%;
+}
+
+.ingreso-familiar{
+	position: absolute;
+	top: 30px;
+	left: 2%;
+	width: 96%;
+	height: 80%;
+}
+
+.seguro-vida-recuperacion{
+	position: absolute;
+	top: 30px;
+	left: 2%;
+	width: 96%;
+	height: 20%;
+}
+
+
+#shadow-close,#shadow-close-custom{
+	position: absolute;
+	right: 4px;
+	top: 3px;
+	background: url('images/icons/delete1.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 20px;
+	height: 20px;
+	z-index: 7;
+}
+
+#c-body{
+	position: relative;
+	height: 85%;
+	width: 100%;
+	background-color:  #F5F5F5;
+}
+
+.c-espacio{
+	width: 100%;
+	height: 2%;
+}
+
+/* Divs */
+#c-auto{
+	width: 96%;
+	left: 2%;
+	height: 10%;
+	font: 4vh 'KievitOT-Regular';
+	border: 1px solid;
+	border-color: #DDDDDD;
+	border-radius: 5px;
+	color: black;
+	position: relative;
+	background-color:  white;
+}
+
+#c-auto  span{
+	top: 50%;
+	left: 15px;
+	margin-top: -2.3vh;
+	position: absolute;
+}
+
+#ul-c-auto{
+	width: 94%;
+	height: auto;
+	left: 3%;
+	position: relative;
+	font: 4vh 'KievitOT-Regular';
+	color: #808080;
+	overflow-y: auto;
+	overflow-x: none;
+	display: none;
+}
+
+/* End Divs */
+
+
+/* Divs */
+#c-fraude{
+	width: 96%;
+	left: 2%;
+	height: 10%;
+	font: 4vh 'KievitOT-Regular';
+	border: 1px solid;
+	border-color: #DDDDDD;
+	border-radius: 5px;
+	color: black;
+	position: relative;
+	background-color:  white;
+}
+
+#c-fraude  span{
+	top: 50%;
+	left: 15px;
+	margin-top: -2.3vh;
+	position: absolute;
+}
+
+#ul-c-fraude{
+	width: 94%;
+	height: auto;
+	left: 3%;
+	position: relative;
+	font: 4vh 'KievitOT-Regular';
+	color: #808080;
+	overflow-y: auto;
+	overflow-x: none;
+	display: none;
+}
+
+/* End Divs */
+
+/* Divs */
+#c-hogar{
+	width: 96%;
+	left: 2%;
+	height: 10%;
+	font: 4vh 'KievitOT-Regular';
+	border: 1px solid;
+	border-color: #DDDDDD;
+	border-radius: 5px;
+	color: black;
+	position: relative;
+	background-color:  white;
+}
+
+#c-hogar  span{
+	top: 50%;
+	left: 15px;
+	margin-top: -2.3vh;
+	position: absolute;
+}
+
+#ul-c-hogar{
+	width: 94%;
+	height: auto;
+	left: 3%;
+	position: relative;
+	font: 4vh 'KievitOT-Regular';
+	color: #808080;
+	overflow-y: auto;
+	overflow-x: none;
+	display: none;
+}
+
+/* End Divs */
+
+/* Divs */
+#c-pyme{
+	width: 96%;
+	left: 2%;
+	height: 10%;
+	font: 4vh 'KievitOT-Regular';
+	border: 1px solid;
+	border-color: #DDDDDD;
+	border-radius: 5px;
+	color: black;
+	position: relative;
+	background-color:  white;
+}
+
+#c-pyme  span{
+	top: 50%;
+	left: 15px;
+	margin-top: -2.3vh;
+	position: absolute;
+}
+
+#ul-c-pyme{
+	width: 94%;
+	height: auto;
+	left: 3%;
+	position: relative;
+	font: 4vh 'KievitOT-Regular';
+	color: #808080;
+	overflow-y: auto;
+	overflow-x: none;
+	display: none;
+}
+
+/* End Divs */
+
+/* Divs */
+#c-ventas{
+	width: 96%;
+	left: 2%;
+	height: 10%;
+	font: 4vh 'KievitOT-Regular';
+	border: 1px solid;
+	border-color: #DDDDDD;
+	border-radius: 5px;
+	color: black;
+	position: relative;
+	background-color:  white;
+}
+
+#c-ventas  span{
+	top: 50%;
+	left: 15px;
+	margin-top: -2.3vh;
+	position: absolute;
+}
+
+#ul-c-ventas{
+	width: 94%;
+	height: auto;
+	left: 3%;
+	position: relative;
+	font: 4vh 'KievitOT-Regular';
+	color: #808080;
+	overflow-y: auto;
+	overflow-x: none;
+	display: none;
+}
+
+/* End Divs */
+
+/* Divs */
+#c-vida{
+	width: 96%;
+	left: 2%;
+	height: 10%;
+	font: 4vh 'KievitOT-Regular';
+	border: 1px solid;
+	border-color: #DDDDDD;
+	border-radius: 5px;
+	color: black;
+	position: relative;
+	background-color:  white;
+}
+
+#c-vida  span{
+	top: 50%;
+	left: 15px;
+	margin-top: -2.3vh;
+	position: absolute;
+}
+
+#ul-c-vida{
+	width: 94%;
+	height: auto;
+	left: 3%;
+	position: relative;
+	font: 4vh 'KievitOT-Regular';
+	color: #808080;
+	overflow-y: auto;
+	overflow-x: none;
+	display: none;
+}
+
+/* End Divs */
+
+/* Divs */
+#c-otros{
+	width: 96%;
+	left: 2%;
+	height: 10%;
+	font: 4vh 'KievitOT-Regular';
+	border: 1px solid;
+	border-color: #DDDDDD;
+	border-radius: 5px;
+	color: black;
+	position: relative;
+	background-color:  white;
+}
+
+#c-otros  span{
+	top: 50%;
+	left: 15px;
+	margin-top: -2.3vh;
+	position: absolute;
+}
+
+#ul-c-otros{
+	width: 94%;
+	height: auto;
+	left: 3%;
+	position: relative;
+	font: 4vh 'KievitOT-Regular';
+	color: #808080;
+	overflow-y: auto;
+	overflow-x: none;
+	display: none;
+}
+
+/* End Divs */
+
+.ul-div{
+	width: 96%;
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	position: relative;
+	padding-left: 2%;
+}
+
+#c-prod{
+	background : url('images/menus/titulos/06tit_capacitacion.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:100% 100%;
+}
+
+.videos{
+	position: absolute;
+	top: 6%;
+	height: 92%;
+	left: 2%;
+	width: 96%;
+}
+
+
+/* Modulo de Ventas */
+
+#s-prod{
+	background : url('images/menus/moduloVentas/01tit-solicitud.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:100% 100%;
+}
+
+#cot-prod{
+	background : url('images/menus/moduloVentas/02tit-Cotizadores.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:100% 100%;
+}
+
+#adjuntar-prod{
+	background : url('images/menus/moduloVentas/04AdjuntarSol.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:100% 100%;
+}
+
+#infoc-prod{
+	background : url('images/menus/moduloVentas/03tit-Info.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:100% 100%;
+}
+
+#doc-per-prod{
+	background : url('images/menus/moduloVentas/05tit-DocsPers.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:100% 100%;
+}
+
+
+/* Citas */
+
+#citas{
+	height: 80%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+	background-color: #e6e6e6;
+	border: 0px solid;
+	border-radius: 9px;
+}
+
+#i-citas{
+	background : url('images/menus/titulos/02tit_aquien.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:100% 100%;
+}
+
+.label-cliente{
+	font: 2.5vh 'KievitOT-Regular';
+	float: left;
+}
+
+.label-fec{
+	font: 2.5vh 'KievitOT-Regular';
+	float: left;
+	position: inherit;
+    top: 10%;
+}
+
+.label-contacto{
+	font: 2.5vh 'KievitOT-Regular';
+	float: left;
+	position: absolute;
+    top: 50%;
+	left: 0;
+}
+
+.label-radio-visita{
+	font: 2.5vh 'KievitOT-Regular';
+	float: left;
+	position: absolute;
+    top: 60%;
+	left: 5%;
+}
+
+.label-radio-llamada{
+	font: 2.5vh 'KievitOT-Regular';
+	float: left;
+	position: absolute;
+    top: 60%;
+	left: 18%;
+}
+
+#fecha-hora{
+	position: inherit;
+    top: 10%;
+}
+
+#nombre-cliente{
+	border: 0px solid;
+	border-radius: 5px;
+	float: left;
+	width: 98%;
+	height: 20px;
+}
+#fecha-hora{
+	border: 0px solid;
+	border-radius: 5px;
+	float: left;
+	width: 50%;
+	height: 20px;
+}
+
+div.ui-datepicker{
+	font-size: 2vh;
+	width: 50%;
+	height: 50%;
+}
+
+#enviar-cita{
+	background-color: #3276b1;
+    border: 0 solid;
+    border-radius: 5px;
+    color: white;
+    font: bold 2.5vh 'KievitOT-Regular';
+    margin: auto;
+    width: 20%;
+	position: inherit;
+	top: 10%;
+}
+
+#dia-hoy{
+	position: absolute;
+	width: 100%;
+	height: 10%;
+	top: 0;
+	font: 3vh 'KievitOT-Regular';
+	text-align: center;
+	padding-top: 1.5vh;
+	color: #333333;	
+	border-bottom: 1px solid gray;
+}
+
+#lista-citas{
+	position: absolute;
+	width: 100%;
+	height: 85%;
+	top: 12%;
+}
+/* Opciones Perfil */
+
+#s-perfil{
+	background : url('images/menus/moduloUsuario/01tit-OpcionesPer.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:100% 100%;
+}
+
+
+/* Opciones de Seguridad */
+
+#s-seguridad{
+	background : url('images/menus/moduloUsuario/02tit-Opciones.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:100% 100%;
+}
+
+/* Tutoriales */
+
+#s-tutoriales{
+	background : url('images/menus/moduloUsuario/03tit-Tutoriales.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:100% 100%;
+}
+
+
+/* Aviso */
+
+#s-aviso{
+	background : url('images/menus/moduloUsuario/04tit-Aviso.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:100% 100%;
+}
+
+/* Contacto */
+
+#s-contacto{
+	background : url('images/menus/moduloUsuario/05tit_contacto.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:100% 100%;
+}
+
+/* legales */
+
+#s-legales{
+	background : url('images/menus/moduloUsuario/06tit-legales.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:100% 100%;
+}
+
+.tabla-citas{
+	width: 100%; 
+	height: auto; 
+	top: 2%;
+	position: relative;	
+}
+
+
+
+.tabla-citas tbody{
+	background-color: #F9F9F9;
+}
+
+.tabla-citas td{
+	padding: 5px;
+	color: #808080;
+    font: 3vh 'KievitOT-Regular';
+}

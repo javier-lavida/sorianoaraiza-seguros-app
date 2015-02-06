@@ -1,0 +1,249 @@
+<div class="modal-body">
+
+        <div data-maxsteps="5" class="steper">
+
+          <p>
+          Para nuestros clientes es necesario considerar sus características y tipos para brindarles una oferta completa,competitiva y adaptada a su perfil.
+          </p>
+
+          <div class="step-1 active" style="display: block;">
+
+            <strong> Edad y género </strong>
+            <div class="row">
+              <div class="col-xs-6">
+                <a data-name="age_gender" data-value="<=45H" class="thumbnail" href="#">
+                  <img src="">
+                </a>
+              </div>
+
+              <div class="col-xs-6">
+                <a data-name="age_gender" data-value="<=45M" class="thumbnail" href="#">
+                  <img src="">
+                </a>
+
+              </div>
+            </div>
+
+            <div class="row">
+
+              <div class="col-xs-6">
+                <a data-name="age_gender" data-value=">=45H" class="thumbnail" href="#">
+                  <img src="">
+                </a>
+              </div>
+
+              <div class="col-xs-6">
+                <a data-name="age_gender" data-value=">=45M" class="thumbnail" href="#">
+                  <img src="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="step-2" style="display: none;">
+            <strong>Ocupación</strong>
+            <div class="row">
+              <div class="col-xs-4">
+                <a data-name="ocupation" data-value="Empleado" class="thumbnail" href="#">
+                  <img src="">
+                </a>
+              </div>
+
+              <div class="col-xs-4">
+                <a data-name="ocupation" data-value="Empresario" class="thumbnail" href="#">
+                  <img src="">
+                </a>
+              </div>
+
+              <div class="col-xs-4">
+                <a data-name="ocupation" data-value="Hogar" class="thumbnail" href="#">
+                  <img src="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="step-3" style="display: none;">
+
+            <strong>Dependientes económicos</strong>
+            <div class="row older-45"> 
+              <div class="col-xs-6">
+                <a data-name="dependants" data-value="0" class="thumbnail" href="#">
+                  <img src="">
+                </a>
+              </div>
+
+              <div class="col-xs-6">
+                <a data-name="dependants" data-value="1" class="thumbnail" href="#">
+                  <img src="">
+                </a>
+              </div>
+            </div>
+
+
+            <div class="row younger-45"> 
+              <div class="col-xs-6">
+                <a data-name="dependants" data-value="0" class="thumbnail" href="#">
+                  <img src="">
+                </a>
+              </div>
+
+              <div class="col-xs-6">
+                <a data-name="dependants" data-value="1" class="thumbnail" href="#">
+                  <img src="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="step-4" style="display: none;">
+            <strong>Auto</strong>
+            <div class="row">
+              <div class="col-xs-6">
+                <a data-name="auto" data-value="0" class="thumbnail" href="#">
+                  <img src="">
+                </a>
+              </div>
+
+              <div class="col-xs-6">
+                <a data-name="auto" data-value="1" class="thumbnail" href="#">
+                  <img src="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="step-5" style="display: none;">
+            <strong>Tarjeta de crédito</strong>
+            <div class="row">
+              <div class="col-xs-4">
+                <a data-name="card" data-value="0" class="thumbnail" href="#">
+                  <img src="">
+                </a>
+              </div>
+
+              <div class="col-xs-4">
+                <a data-name="card" data-value="1" class="thumbnail" href="#">
+                  <img src="">
+                </a>
+              </div>
+
+              <div class="col-xs-4">
+                <a data-name="card" data-value="2" class="thumbnail" href="#">
+                  <img src="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    
+      </div>
+<div aria-hidden="true" aria-labelledby="vademecumResultLabel" role="dialog" tabindex="-1" id="vademecumResultModal" class="modal fade">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+        <h4 id="vademecumResultLabel" class="modal-title">Resultado de tu perfilamiento</h4>
+      </div>
+      <div class="modal-body">
+
+        <p>
+        De acuerdo con las respuestas a las preguntas de tu perfilamiento, el diagnóstico es el siguiente:
+        </p>
+
+        <h3><small>Producto a ofertar</small>  <span id="result-product"></span></h3>
+
+        <p id="result-body">
+
+        </p>
+
+        <strong id="result-body-additional-heading">Otros productos:</strong>
+
+        <div id="result-body-additional" class="list-group"></div>
+
+    
+      </div>
+      <div class="modal-footer">
+        <button data-dismiss="modal" class="btn btn-default" type="button">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<form id="vademecum-form" accept-charset="UTF-8" action="http://app.segurossomostodos.com" method="POST">
+<input type="hidden" value="cc1SippcS1YIzeEwAPP20mcJ2iRM0OMLhPvrKMyR" name="_token">
+<input type="hidden" name="age_gender">
+<input type="hidden" name="ocupation">
+<input type="hidden" name="dependants">
+<input type="hidden" name="auto">
+<input type="hidden" name="card">
+<input type="hidden" value="1" id="actual-step" name="_unused">
+
+</form>
+<script>
+
+$(function(){
+function resetVademecum(){
+$('.steper div[class|="step"]').hide();
+$('.steper .active').show();
+$('#actual-step').val(1);
+}
+resetVademecum();
+$('#vademecum-form input[name="age_gender"]').change(function(){
+var val = $(this).val();
+if(val == undefined || val == null || val == ""){
+$('.steper .younger-45, .steper .older-45').show();
+}else if(val.indexOf("<45") == 0){
+$('.steper .younger-45').show();
+$('.steper .older-45').hide();
+}else if(val.indexOf(">45") == 0){
+$('.steper .younger-45').hide();
+$('.steper .older-45').show();
+}else{
+$('.steper .younger-45, .steper .older-45').show();
+}
+});
+$('div[class|="step"] a').click(function(){
+var name = $(this).attr('data-name');
+var val = $(this).attr('data-value');
+$('#vademecum-form input[name="' + name +'"]').val(val).trigger('change');
+var idx = $('#actual-step').val();
+if(idx == $('.steper').attr('data-maxsteps')){
+var data = $('#vademecum-form').serialize();
+console.log(data);
+	$.get('http://app.segurossomostodos.com/api/vademecum-dialog', data, function(data){
+	console.log('Llego');
+	$('#vademecumModal').modal('hide');
+	$('#vademecumResultModal').modal('show');
+	$('#result-product').html(data.catalog_product.name);
+	$('#result-body').html(data.dialog);
+	$('#result-body-additional').empty();
+	console.log(data.additional_dialogs);
+	if(data.additional_dialogs.length > 0){
+	$('#result-body-additional').show();
+	$('#result-body-additional-heading').show();
+	for(var i=0; i<data.additional_dialogs.length; i++){
+	var additional = data.additional_dialogs[i];
+	var div = $('<div>').attr({'class' : 'list-group-item'});
+	var h3 = $('<h5>').attr({'class' : 'list-group-heading'});
+	var p = $('<p>').attr({'class' : 'list-group-text'});
+	p.html(additional.dialog);
+	h3.html(additional.catalog_product.name);
+	div.append(h3);
+	div.append(p);
+	$('#result-body-additional').append(div);
+	}
+	}else{
+	$('#result-body-additional').hide();
+	$('#result-body-additional-heading').hide();
+	}
+	resetVademecum();
+	},'jsonp');
+}else{
+idx++;
+$('#actual-step').val(idx);
+$(this).closest('div[class|="step"]').hide(400);
+$('.steper .step-'+idx).fadeIn();
+}
+});
+}); </script>

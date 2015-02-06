@@ -1,0 +1,124 @@
+<div class="modal-body">
+        <form id="calc-form" class="form-horizontal">
+          <div class="form-group">
+            <div class="col-md-12">
+              <select style="color: #aaa;" id="calc-ejec" class="form-control input-lg" onchange="calculate()">
+                <option value="0">Tipo de ejecutivo...</option>
+                <option value="1">Ejecutivo</option>
+                <option value="2">BBOO</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-12">
+              <select style="color: #aaa;" id="calc-pago" class="form-control input-lg" onchange="calculate()">
+                <option value="0">Forma de pago...</option>
+                <option value="1">Anual</option>
+                <option value="2">Semestral</option>
+                <option value="3">Trimestral</option>
+                <option value="4">Mensual</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-12">
+              <select style="color: #aaa;" id="calc-seg" class="form-control input-lg" onchange="calculate()">
+                <option value="0">Segmento...</option>
+                <option value="1">Clasico</option>
+                <option value="2">Select</option>
+                <option value="3">Preferente</option>
+                <option value="4">Pyme</option>
+                <option value="5">Premier</option>
+              </select>
+            </div>
+          </div>
+
+           <div class="form-group">
+            <div class="col-md-12">
+              <select style="color: #aaa;" id="calc-prod" class="form-control input-lg" onchange="calculate()">
+                <option value="0">Producto...</option>
+                <option value="1">IFS</option>
+                <option value="2">Casa Segura</option>
+                <option value="3">Empresa protegida</option>
+                <option value="4">Autocompara</option>
+                <option value="5">Fronterizos y legalizados</option>
+                <option value="6">SBS Plus</option>
+                <option value="7">Vida Fácil</option>
+                <option value="8">Auto Fácil</option>
+                <option value="9">Hogar Fácil</option>
+              </select>
+            </div>
+
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-12">
+              <input type="text" placeholder="Valor de la poliza" id="calc-poliza" class="form-control input-lg" onkeyup="calculate()">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3">
+              <h4 class="text-muted">Comisión ganada</h4>
+            </div>
+
+            <div class="col-md-9">
+              <h4 id="result-comision"></h4>
+            </div>
+          </div>
+		  <hr>
+		  <div class="check-container" style="background: url('../css/images/Cheque-ABC.jpg'); background-repeat: no-repeat; background-position: center center; background-size: 100% 100%;height: 160px; width: 100%; position: realtive">
+
+            <p class="check-text check-day"  style="position: absolute; right: 0px; margin-right: 25%;">22&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014</p>
+            
+
+            <p class="check-text check-user" style="left: 0px; position: absolute; margin-left: 8%; margin-top: 5%;">Ivan  Empresario</p>
+
+            <p class="check-text check-amount" style="position: absolute; right: 0px; margin-right: 12%; margin-top: 5%;"></p>
+
+            <p class="check-text check-letter-amount"></p>
+          </div>
+		  <hr>
+          <div class="row">
+            <div class="col-md-3">
+              <h4 class="text-muted">Poliza ponderada</h4>
+            </div>
+
+            <div class="col-md-9">
+              <h4 id="result-pond"></h4>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3">
+              <h4 class="text-muted">Si hubiera sido anual</h4>
+            </div>
+
+            <div class="col-md-9">
+              <h4 id="result-anual"></h4>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3">
+              <h4 class="text-muted">Cuanto dejé de ganar</h4>
+            </div>
+
+            <div class="col-md-9">
+              <h4 id="result-lost"></h4>
+            </div>
+          </div>
+
+        </form>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/holder/2.3.1/holder.js"></script>
+		<script type="text/javascript">
+			  String.prototype.endsWith = function(suffix) {
+				  return this.indexOf(suffix, this.length - suffix.length) !== -1;
+			  };
+		</script>
+		
+      </div>

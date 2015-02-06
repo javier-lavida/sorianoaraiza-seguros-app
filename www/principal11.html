@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=2.2, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!-- Le styles -->
+		<!--link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" type="text/css"-->
+		<link rel="stylesheet" href="css/reset.css" type="text/css"/>
+		<link rel="stylesheet" href="css/stylePrincipal.css" type="text/css"/>
+        <title>Santander</title>
+    </head>
+    <body>
+        <div class="cuerpo">
+			<div class="header-gray">
+				<div id="back-home" onclick="goToHome()" class="back">
+					<img class="back-button" src="css/images/icons/backButton.png" width="40%" height="40%">
+				</div>
+				<span class="titulo-menu">Módulo Principal</span>
+			</div>
+			<div class="complete-body">
+				<div id="principal-body-part-1">
+					<div class="one-element-principal">&nbsp;</div>
+					<div class="principal-body-element-1">
+						<p class="info-productos">Información de productos</p>
+						<p class="detalle-productos">Detalle</p>
+						<div class="flecha-detalle"></div>
+						
+						<div id="carrusel-principal-1"><img class="banner-principal" src="css/images/banners/banner_20.jpg" width="210px" height="100%"></div>
+						<div id="carrusel-principal-2"><img class="banner-principal" src="css/images/banners/banner_18.jpg" width="210px" height="100%"></div>
+						<div id="carrusel-principal-3"><img class="banner-principal" src="css/images/banners/banner_22.jpg" width="210px" height="100%"></div>
+					</div>
+					<div class="one-element-principal">&nbsp;</div>
+					<div class="principal-body-element-2">
+						<p class="info-productos">Agenda</p>
+						<p class="detalle-productos">Detalle</p>
+						<div class="flecha-detalle"></div>
+						<div class="agenda-contenido">
+							<div class="calendar">
+								<p class="mes">Septiembre</p>
+								<p class="ano">10</p>
+								<p class="dia">Martes</p>
+							</div>
+							<div class="gris-blanco">
+								<div class="griss"><p>Alan Rodríguez</p><span class="horaa">10:30 AM</span></div>
+								<div class="blancoo"><p>Javier Lávida</p><span class="horaa">10:30 AM</span></div>
+								<div class="griss"><p>Carlos del Valle</p><span class="horaa">12:30 AM</span></div>
+							</div>
+							<div class="llamadas-visitas">
+								<div class="label-llamadas-visitas">
+									<span class="label-llamadas">Llamadas</span>
+									<span class="label-visitas">Visitas</span>
+								</div>
+								<div class="check-left-1">
+									<input class="supercheck" type="checkbox" name="llamdas" value="true" >
+								</div>
+								<div class="check-right-1">
+									<input class="supercheck" type="checkbox" name="visitas" value="true" checked>
+								</div>
+								<div class="check-left-2">
+									<input class="supercheck" type="checkbox" name="llamdas" value="true" checked>
+								</div>
+								<div class="check-right-2">
+									<input class="supercheck" type="checkbox" name="visitas" value="true">
+								</div>
+								<div class="check-left-3">
+									<input class="supercheck" type="checkbox" name="llamdas" value="true" >
+								</div>
+								<div class="check-right-3">
+									<input class="supercheck" type="checkbox" name="visitas" value="true">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="one-element-principal">&nbsp;</div>
+					<div class="principal-body-element-3">
+						<p class="info-productos">Herramientas de Ventas</p>
+						<p class="detalle-productos">Detalle</p>
+						<div class="flecha-detalle"></div>
+						
+						<div class="generic-gris-blanco">
+							<div class="generic-griss">
+								<p>Ingreso Familiar Santander</p>
+								<div class="open-element">
+									<span>Abrir</span>
+									<div class="abrir-flecha-detalle"></div>
+								</div>
+							</div>
+							<div class="generic-blancoo">
+								<p>Super Blindaje Santander</p>
+								<div class="open-element">
+									<span>Abrir</span>
+									<div class="abrir-flecha-detalle"></div>
+								</div>
+							</div>
+							<div class="generic-griss">
+								<p>Casa Segura</p>
+								<div class="open-element">
+									<span>Abrir</span>
+									<div class="abrir-flecha-detalle"></div>
+								</div>
+							</div>
+							<div class="generic-blancoo">
+								<p>Auto Compara</p>
+								<div class="open-element">
+									<span>Abrir</span>
+									<div class="abrir-flecha-detalle"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="principal-body-part-2">
+					<div class="one-element-principal">&nbsp;</div>
+					<div class="principal-body-element-4">
+						<p class="info-productos">Capacitación</p>
+						<p class="detalle-productos">Detalle</p>
+						<div class="flecha-detalle"></div>
+						
+						<div class="generic-gris-blanco">
+							<div class="generic-griss-cap">
+								<p>Venta de Seguros</p>
+								<div id="venta-seguros-open" onclick="onClickVideo(this)" class="open-element-cap">
+									<span>Abrir</span>
+									<div class="abrir-flecha-detalle"></div>
+								</div>
+							</div>
+							<div class="generic-blancoo-cap">
+								<p>Seguros Automotriz</p>
+								<div id="seguros-automotriz-open" onclick="onClickVideo(this)" class="open-element-cap">
+									<span>Abrir</span>
+									<div class="abrir-flecha-detalle"></div>
+								</div>
+							</div>
+							<div class="generic-griss-cap">
+								<p>Casa Segura</p>
+								<div id="casa-segura-open" onclick="onClickVideo(this)" class="open-element-cap">
+									<span>Abrir</span>
+									<div class="abrir-flecha-detalle"></div>
+								</div>
+							</div>
+							<div class="generic-blancoo-cap">
+								<p>Empresa Protegida</p>
+								<div id="empresa-protegida-open" onclick="onClickVideo(this)" class="open-element-cap">
+									<span>Abrir</span>
+									<div class="abrir-flecha-detalle"></div>
+								</div>
+							</div>
+							<div class="generic-griss-cap">
+								<p>Seguro de Vida</p>
+								<div id="segura-vida-open" onclick="onClickVideo(this)" class="open-element-cap">
+									<span>Abrir</span>
+									<div class="abrir-flecha-detalle"></div>
+								</div>
+							</div>
+							<div class="generic-blancoo-cap">
+								<p>PyME</p>
+								<div id="pyme-open" onclick="onClickVideo(this)" class="open-element-cap">
+									<span>Abrir</span>
+									<div class="abrir-flecha-detalle"></div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="one-element-principal">&nbsp;</div>
+					<div class="principal-body-element-5">
+						<p class="info-productos">Formulario de Filtrado</p>
+						<p class="detalle-productos">Detalle</p>
+						<div class="flecha-detalle"></div>
+						
+						<div class="generic-gris-blanco">
+							<div class="generic-griss">
+								<p>Ingreso Familiar Santander</p>
+								<div class="open-element">
+									<span>Abrir</span>
+									<div class="abrir-flecha-detalle"></div>
+								</div>
+							</div>
+							<div class="generic-blancoo">
+								<p>Super Blindaje Santander</p>
+								<div class="open-element">
+									<span>Abrir</span>
+									<div class="abrir-flecha-detalle"></div>
+								</div>
+							</div>
+							<div class="generic-griss">
+								<p>Casa Segura</p>
+								<div class="open-element">
+									<span>Abrir</span>
+									<div class="abrir-flecha-detalle"></div>
+								</div>
+							</div>
+							<div class="generic-blancoo">
+								<p>Auto Compara</p>
+								<div class="open-element">
+									<span>Abrir</span>
+									<div class="abrir-flecha-detalle"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="one-element-principal">&nbsp;</div>
+					<div class="principal-body-element-6">
+						<p class="info-productos">Diálogos de Valor</p>
+						<p class="detalle-productos">Detalle</p>
+						<div class="flecha-detalle"></div>
+						
+						<div class="diag-val">
+							<span>¿Qué edad tiene el cliente?</span>
+							<br />
+							<select class="form-control" name="age">
+							          <option value="18-45">Entre 18 y 45 años</option>
+							          <option value=">45">Mayor de 45 años</option>
+							</select>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="bolitas">
+					<div id="bolita1" onclick="clickBolita1()"></div>
+					<div id="bolita2" onclick="clickBolita2()"></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<!--script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script-->
+		<!--script type="text/javascript" src="js/jquery.cycle.js"></script-->
+		<script type="text/javascript" src="js/moduloPrincipal.js"></script>
+    </body>
+</html>
