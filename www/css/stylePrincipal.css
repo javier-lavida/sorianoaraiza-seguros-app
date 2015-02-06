@@ -9,6 +9,18 @@ font-family:'KievitOT-Regular';
 src: url('KievitOT-Regular.otf')   format('opentype');
 }
 
+#titulo{
+	background-color: white;
+}
+
+#logo-ariza{
+	margin-top: -10%;
+	width: 100%;
+}
+.opciones-menu{
+	color:white;
+}
+
 .titulo-menu{
 	color: gray;
 	font-size: 3vw;
@@ -29,13 +41,13 @@ src: url('KievitOT-Regular.otf')   format('opentype');
 
 .header{
 	top: 1%;
-	height: 14%;
+	height: 18%;
 	width: 96%;
 	left: 2%;
-	background-color: #FE0000;
+	background-color: #4AA48C ;
 	position: absolute;
-	border: 0px solid;
-	border-radius: 9px;
+	
+
 }
 
 .header-gray{
@@ -92,10 +104,14 @@ src: url('KievitOT-Regular.otf')   format('opentype');
 .footer{
 	width: 96%;
 	left: 2%;
-	height: 10%;
+	height: 7%;
 	position: absolute;
 	bottom:0;
+
+
 }
+
+
 
 .footer-image{
 	width: 96%;
@@ -107,6 +123,8 @@ src: url('KievitOT-Regular.otf')   format('opentype');
 }
 
 .text-footer{
+	background-color: #4AA48C;
+	color:white !important;
 	width: 100%;
 	position: absolute;
 	text-align: center;
@@ -115,7 +133,17 @@ src: url('KievitOT-Regular.otf')   format('opentype');
 	top: 50%;
 	margin-top: -1vh;
 }
-
+.text-footer-2{
+	background-color: white;
+	color:black;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	font: bold 2vh 'KievitOT-Regular';
+	color: #8C9192;
+	top: 50%;
+	margin-top: -1vh;
+}
 .bolitas{
 	width: 100%;
 	height: 100%;
@@ -149,7 +177,7 @@ src: url('KievitOT-Regular.otf')   format('opentype');
     left: 4%;
     position: absolute;
     top: 16%;
-    width: 20%;
+    width: 40%;
 }
 
 .imagenes-header{
@@ -164,14 +192,14 @@ src: url('KievitOT-Regular.otf')   format('opentype');
 	width: 17%;
 	height: 80%;
 	top: 10%;
-	left: 68%;
+	left: 65%;
 	position: absolute;
 	text-align: center;
 }
 
 .imagen-login{
 	width: 15%;
-	height: 80%;
+	height: 100px;
 	top: 10%;
 	left: 84%;
 	position: absolute;
@@ -199,6 +227,7 @@ src: url('KievitOT-Regular.otf')   format('opentype');
     color: #ffffff;
     font: bold 1.6vh 'KievitOT-Regular';
     margin-left: -25%;
+    margin-top: -50%;
     text-align: center;
     width: 115%;
 }
@@ -215,19 +244,7 @@ src: url('KievitOT-Regular.otf')   format('opentype');
 	font: bold 1.6vh 'KievitOT-Regular';
 }
 
-.zurich-header{
-	height: 100%;
-	width: 50%;
-	position: absolute;
-	
-}
 
-.santander-header{
-	height: 100%;
-	width: 50%;
-	left: 50%;
-	position: absolute;
-}
 
 .logo-left{
 	width: 20%;
@@ -289,16 +306,20 @@ src: url('KievitOT-Regular.otf')   format('opentype');
 }
 
 .logo-app{
-	width: 100%;
+	top:3%;
+	width: 80%;
 	position: relative;
-	height: 19%;
+	height: 30%;
     text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .one-element{
 	width:100%;
-	height:1%;
-	position: relative;
+	height:158px;
+	position: absolute;
 }
 
 #portal-movil{
@@ -311,12 +332,14 @@ src: url('KievitOT-Regular.otf')   format('opentype');
 
 .area-gris{
 	width: 100%;
-	background-position: center center;
-	background: radial-gradient(circle, #FFFFFF, #B5B5B5);
+	background-color:#EAEAEA;
 	position:relative;
 	height: 19%;
-	border: 0px solid;
-	border-radius: 9px;
+	border: 0px solid;	
+}
+.area-gris:hover, .area-gris:focus,.area-gris:hover span{
+	background-color: #8c9192;
+	color:white !important;
 }
 
 #principal-body-part-1{
@@ -819,8 +842,8 @@ Referencia
 .text-modulo-principal{
 	width: 80%;
 	left: 10%;
-	height: 10%;
-	top: 3%;
+	height: 7%;
+	top: 10%;
 	position: relative;
 	font:bold 4vh 'KievitOT-Regular'; 
 	text-align: center;
@@ -829,75 +852,82 @@ Referencia
 .imagenes-modulo-principal{
 	height: 80%;
 	width: 100%;
-	top: 20%;
+	top: 25%;
 	position: absolute;
 }
 
 #como-voy-principal{
-	width: 50%;
-	height: 33%;
+	width: 48%;
+	height: 30%;
 	left: 0;
 	top: 0;
 	position: absolute;
 	text-align: center;
+	background-color: #4AA48C;
 }
 
 #citas-principal{
-	width: 50%;
-	height: 33%;
+	width: 48%;
+	height: 30%;
 	right: 0;
 	top: 0;
 	position: absolute;
 	text-align: center;
+	background-color: #4AA48C;
 }
 
 #perfilar-principal{
-	width: 50%;
-	height: 33%;
+	width: 48%;
+	height: 30%;
 	left: 0;
 	top: 33%;
 	position: absolute;
 	text-align: center;
+	background-color: #4AA48C;
 }
 
 #oferta-principal{
-	width: 50%;
-	height: 33%;
+	width: 48%;
+	height: 30%;
 	right: 0;
 	top: 33%;
 	position: absolute;
 	text-align: center;
+	background-color: #4AA48C;
 }
 
 #filtrado-principal{
-	width: 50%;
-	height: 33%;
+	width: 48%;
+	height: 30%;
 	left: 0;
 	top: 66%;
 	position: absolute;
 	text-align: center;
+	background-color: #4AA48C;
+	
 }
 
 #capacitacion-principal{
-	width: 50%;
-	height: 33%;
+	width: 48%;
+	height: 30%;
 	right: 0;
 	top: 66%;
 	position: absolute;
 	text-align: center;
+	background-color: #4AA48C;
 }
 
-.navegador-azul{
+.navegador-negro{
 	position: relative;
 	left: 0;
-	top: 0;
+	top: 5%;
 	height: 7%;
 	width: 100%;
-	background-color: #3D6FD0;
+	background-color: #000;
 	background-position: center center;
 	text-align: left;
 	border: 0 solid;
-	border-radius: 9px;
+	
 }
 
 .texto-azul-1{
@@ -977,31 +1007,50 @@ Referencia
 }
 
 #cv{
+	/*
 	background : url('images/menus/titulos/01tit_comovoy.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size:100% 100%;
+	*/
+	font-size: 350%;
+	text-align: left;
+	color:#000;
 }
 
 #perfff{
+	/*
 	background : url('images/menus/titulos/03tit_perfilar.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size:100% 100%;
+	*/
+	color:black;
+	font-size: 200%;
 }
 
 #i-prod{
+	/*
 	background : url('images/menus/titulos/04tit_oferta.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size:100% 100%;
+	*/
+	margin-top: 3%;
+	color:black;
+	font-size: 150%;
 }
 
 #f-prod{
+	/*
 	background : url('images/menus/titulos/05tit_filtrado.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size:100% 100%;
+	*/
+	margin-top: 3%;
+	color:black;
+	font-size: 200%;
 }
 
 .cv-titulo span{
@@ -1009,8 +1058,9 @@ Referencia
 	color: #3D6FD0;
 	right: 0;
 	font: bold 3vh 'KievitOT-Regular';
-	top: 50%;
+	top: 115%;
 	margin-top: -1.5vh;
+	color:#4AA48C;
 }
 
 .ventas-titulo span{
@@ -1042,8 +1092,9 @@ Referencia
 .fondo-gris{
 	width: 100%;
 	height: 20%;
-	background-color: #E6E6E6;
-	color: #808080;
+	background-color: #4AA48C;
+	color: white;
+	text-indent: 8%;
 	font: 3vh 'KievitOT-Regular';
 	position: relative;
 }
@@ -1072,6 +1123,7 @@ Referencia
 }
 
 #fp-body{
+	top:10%;
 	position: relative;
 	height: 85%;
 	width: 100%;
@@ -1093,9 +1145,9 @@ Referencia
 	border: 1px solid;
 	border-color: #DDDDDD;
 	border-radius: 5px;
-	color: black;
+	color: white;
 	position: relative;
-	background-color:  white;
+	background-color:  #4AA48C;
 }
 
 #fp-fraude  span{
@@ -1113,9 +1165,9 @@ Referencia
 	border: 1px solid;
 	border-color: #DDDDDD;
 	border-radius: 5px;
-	color: black;
+	color: white;
 	position: relative;
-	background-color:  white;
+	background-color:  #A2D0C3;
 }
 
 #fp-hogar span{
@@ -1133,9 +1185,9 @@ Referencia
 	border: 1px solid;
 	border-color: #DDDDDD;
 	border-radius: 5px;
-	color: black;
+	color: white;
 	position: relative;
-	background-color:  white;
+	background-color:  #4AA48C;
 }
 
 #fp-pyme span{
@@ -1153,9 +1205,9 @@ Referencia
 	border: 1px solid;
 	border-color: #DDDDDD;
 	border-radius: 5px;
-	color: black;
+	color: white;
 	position: relative;
-	background-color:  white;
+	background-color:  #A2D0C3;
 }
 
 #fp-vida span{
@@ -1341,6 +1393,7 @@ Referencia
 }
 
 #c-body{
+	margin-top: 8%;
 	position: relative;
 	height: 85%;
 	width: 100%;
@@ -1361,9 +1414,9 @@ Referencia
 	border: 1px solid;
 	border-color: #DDDDDD;
 	border-radius: 5px;
-	color: black;
+	color: white;
 	position: relative;
-	background-color:  white;
+	background-color:  #4AA48C;
 }
 
 #c-auto  span{
@@ -1397,9 +1450,9 @@ Referencia
 	border: 1px solid;
 	border-color: #DDDDDD;
 	border-radius: 5px;
-	color: black;
+	color: white;
 	position: relative;
-	background-color:  white;
+	background-color:  #A2D0C3;
 }
 
 #c-fraude  span{
@@ -1432,9 +1485,9 @@ Referencia
 	border: 1px solid;
 	border-color: #DDDDDD;
 	border-radius: 5px;
-	color: black;
+	color: white;
 	position: relative;
-	background-color:  white;
+	background-color:  #4AA48C;
 }
 
 #c-hogar  span{
@@ -1467,9 +1520,9 @@ Referencia
 	border: 1px solid;
 	border-color: #DDDDDD;
 	border-radius: 5px;
-	color: black;
+	color: white;
 	position: relative;
-	background-color:  white;
+	background-color:  #A2D0C3;
 }
 
 #c-pyme  span{
@@ -1502,9 +1555,9 @@ Referencia
 	border: 1px solid;
 	border-color: #DDDDDD;
 	border-radius: 5px;
-	color: black;
+	color: white;
 	position: relative;
-	background-color:  white;
+	background-color:  #4AA48C;
 }
 
 #c-ventas  span{
@@ -1537,9 +1590,9 @@ Referencia
 	border: 1px solid;
 	border-color: #DDDDDD;
 	border-radius: 5px;
-	color: black;
+	color: white;
 	position: relative;
-	background-color:  white;
+	background-color:  #A2D0C3;
 }
 
 #c-vida  span{
@@ -1572,9 +1625,9 @@ Referencia
 	border: 1px solid;
 	border-color: #DDDDDD;
 	border-radius: 5px;
-	color: black;
+	color: white;
 	position: relative;
-	background-color:  white;
+	background-color:  #4AA48C;
 }
 
 #c-otros  span{
@@ -1607,10 +1660,15 @@ Referencia
 }
 
 #c-prod{
+	/*
 	background : url('images/menus/titulos/06tit_capacitacion.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size:100% 100%;
+	*/
+	margin-top: 5%;
+	color:black;
+	font-size: 250%;
 }
 
 .videos{
@@ -1668,16 +1726,21 @@ Referencia
     position: relative;
     text-align: center;
     width: 100%;
-	background-color: #e6e6e6;
+	background-color: #eaeaea;
 	border: 0px solid;
 	border-radius: 9px;
 }
 
 #i-citas{
+	/*
 	background : url('images/menus/titulos/02tit_aquien.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size:100% 100%;
+	*/
+	margin-top:5%;
+	color:black;
+	font-size: 150%;
 }
 
 .label-cliente{
